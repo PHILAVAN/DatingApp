@@ -85,4 +85,9 @@ public class ProfileCheckinMain extends AppCompatActivity {
 
     }
 
+    public void onCloseClicked(View view) {
+        Intent btnClick = new Intent(mContext, MainActivity.class);
+        btnClick.putExtra("url", profileImageUrl);
+        startActivity(btnClick);
+    }
 }

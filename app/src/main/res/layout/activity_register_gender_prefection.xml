@@ -11,7 +11,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <TextView
+    <com.quintus.labs.datingapp.customfonts.TextViewSemiBold
         android:id="@+id/numberOfPagesLeft"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -25,7 +25,7 @@
 
     <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="60dp"
+        android:layout_height="150dp"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
         android:layout_margin="20dp"
@@ -33,12 +33,12 @@
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
             android:layout_gravity="center_horizontal"
             android:background="@drawable/logo" />
 
-        <com.quintus.labs.datingapp.customfonts.MyTextView_GreatVibes_Regular
+        <com.quintus.labs.datingapp.customfonts.TextViewBold
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
@@ -74,7 +74,7 @@
             android:layout_height="wrap_content"
             android:orientation="horizontal">
 
-            <Button
+            <com.quintus.labs.datingapp.customfonts.ButtonSemiBold
                 android:id="@+id/maleSelectionButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -88,7 +88,7 @@
                 android:textSize="30sp"
                 android:textStyle="bold" />
 
-            <Button
+            <com.quintus.labs.datingapp.customfonts.ButtonSemiBold
                 android:id="@+id/femaleSelectionButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
 
         </LinearLayout>
 
-        <Button
+        <com.quintus.labs.datingapp.customfonts.ButtonSemiBold
             android:id="@+id/preferenceContinueButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

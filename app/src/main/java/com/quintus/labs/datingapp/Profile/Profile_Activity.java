@@ -4,6 +4,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,6 +19,9 @@ import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 import com.quintus.labs.datingapp.R;
 import com.quintus.labs.datingapp.Utils.PulsatorLayout;
 import com.quintus.labs.datingapp.Utils.TopNavigationViewHelper;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Grocery App
@@ -32,7 +38,6 @@ public class Profile_Activity extends AppCompatActivity {
     private ImageView imagePerson;
     private TextView name;
 
-    private String userId;
 
 
     @Override
@@ -67,6 +72,9 @@ public class Profile_Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
+
     }
 
     @Override

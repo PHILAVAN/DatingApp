@@ -34,4 +34,7 @@
         <item>@drawable/img3</item>
         <item>@drawable/img4</item>
     </integer-array>
+    <string name="title_activity_splash_screen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

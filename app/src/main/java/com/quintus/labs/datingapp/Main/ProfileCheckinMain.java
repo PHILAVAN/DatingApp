@@ -11,12 +11,6 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.quintus.labs.datingapp.R;
 
-/**
- * DatingApp
- * https://github.com/quintuslabs/DatingApp
- * Created on 25-sept-2018.
- * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
- */
 public class ProfileCheckinMain extends AppCompatActivity {
 
     private Context mContext;
@@ -28,14 +22,6 @@ public class ProfileCheckinMain extends AppCompatActivity {
 
         mContext = ProfileCheckinMain.this;
 
-       /* ImageButton back = findViewById(R.id.back);
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
-            }
-        });
-*/
 
         TextView profileName = findViewById(R.id.name_main);
         ImageView profileImage = findViewById(R.id.profileImage);

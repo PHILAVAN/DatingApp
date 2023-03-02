@@ -17,13 +17,6 @@ import com.quintus.labs.datingapp.Utils.User;
 
 import java.util.List;
 
-/**
- * DatingApp
- * https://github.com/quintuslabs/DatingApp
- * Created on 25-sept-2018.
- * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
- */
-
 public class ProfileAdapter extends ArrayAdapter<User> {
     private int resourceId;
     private Context mContext;
@@ -39,7 +32,6 @@ public class ProfileAdapter extends ArrayAdapter<User> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         User user = getItem(position);
 
-        //improve the efficiency
         View view;
         ViewHolder viewHolder;
 

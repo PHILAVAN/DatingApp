@@ -1,10 +1,5 @@
 <resources>
-    <!--
-   * DatingApp
-    * https://github.com/quintuslabs/DatingApp
-    * Created on 25-sept-2018.
-    * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
-    -->
+
     <string name="app_name">Love Dating</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -27,13 +22,6 @@
     <string name="permission_contacts_rationale">GALLERY PERMISSION</string>
     <string name="permision_available_camera">camera available</string>
 
-    <!-- introduction pictures-->
-    <integer-array name="img_id_arr">
-        <item>@drawable/img1</item>
-        <item>@drawable/img2</item>
-        <item>@drawable/img3</item>
-        <item>@drawable/img4</item>
-    </integer-array>
     <string name="title_activity_splash_screen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>

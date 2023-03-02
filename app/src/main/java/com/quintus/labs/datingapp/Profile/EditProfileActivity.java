@@ -35,13 +35,6 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-/**
- * DatingApp
- * https://github.com/quintuslabs/DatingApp
- * Created on 25-sept-2018.
- * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
- */
-
 public class EditProfileActivity extends AppCompatActivity {
     private static final String TAG = "EditProfileActivity";
     private static final int PERMISSION_CALLBACK_CONSTANT = 100;
@@ -184,7 +177,7 @@ public class EditProfileActivity extends AppCompatActivity {
             if (ActivityCompat.shouldShowRequestPermissionRationale(EditProfileActivity.this, permissionsRequired[0])
                     || ActivityCompat.shouldShowRequestPermissionRationale(EditProfileActivity.this, permissionsRequired[1])
                     || ActivityCompat.shouldShowRequestPermissionRationale(EditProfileActivity.this, permissionsRequired[2])) {
-                //Show Information about why you need the permission
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(EditProfileActivity.this);
                 builder.setTitle("Need Multiple Permissions");
                 builder.setMessage("This app needs Camera and Location permissions.");
@@ -203,8 +196,7 @@ public class EditProfileActivity extends AppCompatActivity {
                 });
                 builder.show();
             } else if (permissionStatus.getBoolean(permissionsRequired[0], false)) {
-                //Previously Permission Request was cancelled with 'Dont Ask Again',
-                // Redirect to Settings after showing Information about why you need the permission
+
                 AlertDialog.Builder builder = new AlertDialog.Builder(EditProfileActivity.this);
                 builder.setTitle("Need Multiple Permissions");
                 builder.setMessage("This app needs Camera and Location permissions.");
@@ -228,18 +220,15 @@ public class EditProfileActivity extends AppCompatActivity {
                 });
                 builder.show();
             } else {
-                //just request the permission
+
                 ActivityCompat.requestPermissions(EditProfileActivity.this, permissionsRequired, PERMISSION_CALLBACK_CONSTANT);
             }
-
-            // txtPermissions.setText("Permissions Required");
 
             SharedPreferences.Editor editor = permissionStatus.edit();
             editor.putBoolean(permissionsRequired[0], true);
             editor.commit();
         } else {
-            //You already have the permission, just go ahead.
-            //proceedAfterPermission();
+
         }
     }
 
@@ -304,7 +293,7 @@ public class EditProfileActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == REQUEST_PERMISSION_SETTING) {
             if (ActivityCompat.checkSelfPermission(EditProfileActivity.this, permissionsRequired[0]) == PackageManager.PERMISSION_GRANTED) {
-                //Got Permission
+
                 proceedAfterPermission();
             }
         }
@@ -360,7 +349,6 @@ public class EditProfileActivity extends AppCompatActivity {
         super.onPostResume();
         if (sentToSettings) {
             if (ActivityCompat.checkSelfPermission(EditProfileActivity.this, permissionsRequired[0]) == PackageManager.PERMISSION_GRANTED) {
-                //Got Permission
                 proceedAfterPermission();
             }
         }

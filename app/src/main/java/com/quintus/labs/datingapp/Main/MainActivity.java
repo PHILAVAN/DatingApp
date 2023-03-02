@@ -27,14 +27,6 @@ import com.quintus.labs.datingapp.Utils.TopNavigationViewHelper;
 import java.util.ArrayList;
 import java.util.List;
 
-
-/**
- * DatingApp
- * https://github.com/quintuslabs/DatingApp
- * Created on 25-sept-2018.
- * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
- */
-
 public class MainActivity extends Activity {
     private static final String TAG = "MainActivity";
     private static final int ACTIVITY_NUM = 1;
@@ -65,19 +57,19 @@ public class MainActivity extends Activity {
 
 
         rowItems = new ArrayList<Cards>();
-        Cards cards = new Cards("1", "Swati Tripathy", 21, "https://im.idiva.com/author/2018/Jul/shivani_chhabra-_author_s_profile.jpg", "Simple and beautiful Girl", "Acting", 200);
+        Cards cards = new Cards("1", "Angelina Jolie", 21, "https://worldwideinterweb.com/wp-content/uploads/2015/01/2016-most-beautiful-woman.jpg", "Simple and beautiful Girl", "Acting", 200);
         rowItems.add(cards);
-        cards = new Cards("2", "Ananaya Pandy", 20, "https://i0.wp.com/profilepicturesdp.com/wp-content/uploads/2018/06/beautiful-indian-girl-image-for-profile-picture-8.jpg", "cool Minded Girl", "Dancing", 800);
+        cards = new Cards("2", "Bella Hadid", 20, "https://worldwideinterweb.com/wp-content/uploads/2015/01/the-20-most-beautiful-women-in-the-world-according-to-google-5.jpg.webp", "cool Minded Girl", "Dancing", 800);
         rowItems.add(cards);
-        cards = new Cards("3", "Anjali Kasyap", 22, "https://pbs.twimg.com/profile_images/967542394898952192/_M_eHegh_400x400.jpg", "Simple and beautiful Girl", "Singing", 400);
+        cards = new Cards("3", "Blake Lively", 22, "https://worldwideinterweb.com/wp-content/uploads/2015/01/the-20-most-beautiful-women-in-the-world-according-to-google-7.jpg.webp", "Simple and beautiful Girl", "Singing", 400);
         rowItems.add(cards);
-        cards = new Cards("4", "Preety Deshmukh", 19, "http://profilepicturesdp.com/wp-content/uploads/2018/07/fb-real-girls-dp-3.jpg", "dashing girl", "swiming", 1308);
+        cards = new Cards("4", "Beyonce Knowles", 19, "https://worldwideinterweb.com/wp-content/uploads/2015/01/25-most-beautiful-women-in-the-world-according-to-google-11.jpg", "dashing girl", "Swimming", 1308);
         rowItems.add(cards);
-        cards = new Cards("5", "Srutimayee Sen", 20, "https://dp.profilepics.in/profile_pictures/selfie-girls-profile-pics-dp/selfie-pics-dp-for-whatsapp-facebook-profile-25.jpg", "chulbuli nautankibaj ", "Drawing", 1200);
+        cards = new Cards("5", "Aishwarya Rai", 20, "https://worldwideinterweb.com/wp-content/uploads/2015/01/25-most-beautiful-women-in-the-world-according-to-google-9.jpg", "Cool and beautiful", "Drawing", 1200);
         rowItems.add(cards);
-        cards = new Cards("6", "Dikshya Agarawal", 21, "https://pbs.twimg.com/profile_images/485824669732200448/Wy__CJwU.jpeg", "Simple and beautiful Girl", "Sleeping", 700);
+        cards = new Cards("6", "Jessica Alba", 21, "https://worldwideinterweb.com/wp-content/uploads/2015/01/25-most-beautiful-women-in-the-world-according-to-google-6.jpg", "Simple and beautiful Girl", "Model", 700);
         rowItems.add(cards);
-        cards = new Cards("7", "Sudeshna Roy", 19, "https://talenthouse-res.cloudinary.com/image/upload/c_fill,f_auto,h_640,w_640/v1411380245/user-415406/submissions/hhb27pgtlp9akxjqlr5w.jpg", "Papa's Pari", "Art", 5000);
+        cards = new Cards("7", "Eva Mendes", 19, "https://worldwideinterweb.com/wp-content/uploads/2015/01/25-most-beautiful-women-in-the-world-according-to-google-20.jpg.webp", "Cool and beautiful", "Art", 5000);
         rowItems.add(cards);
 
         arrayAdapter = new PhotoAdapter(this, R.layout.item, rowItems);
@@ -135,7 +127,7 @@ public class MainActivity extends Activity {
         flingContainer.setFlingListener(new SwipeFlingAdapterView.onFlingListener() {
             @Override
             public void removeFirstObjectInAdapter() {
-                // this is the simplest way to delete an object from the Adapter (/AdapterView)
+
                 Log.d("LIST", "removed object!");
                 rowItems.remove(0);
                 arrayAdapter.notifyDataSetChanged();
@@ -171,7 +163,6 @@ public class MainActivity extends Activity {
             }
         });
 
-        // Optionally add an OnItemClickListener
         flingContainer.setOnItemClickListener(new SwipeFlingAdapterView.OnItemClickListener() {
             @Override
             public void onItemClicked(int itemPosition, Object dataObject) {
@@ -220,10 +211,6 @@ public class MainActivity extends Activity {
         }
     }
 
-
-    /**
-     * setup top tool bar
-     */
     private void setupTopNavigationView() {
         Log.d(TAG, "setupTopNavigationView: setting up TopNavigationView");
         BottomNavigationViewEx tvEx = findViewById(R.id.topNavViewBar);

@@ -15,13 +15,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-/**
- * Grocery App
- * https://github.com/quintuslabs/GroceryStore
- * Created on 18-Feb-2019.
- * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
- */
-
 public class RegisterAge extends AppCompatActivity {
 
     String password;
@@ -29,7 +22,6 @@ public class RegisterAge extends AppCompatActivity {
     SimpleDateFormat dateFormatter = new SimpleDateFormat("MM-dd-yyyy");
     private DatePicker ageSelectionPicker;
     private Button ageContinueButton;
-    // age limit attribute
     private int ageLimit = 13;
 
     @Override
@@ -59,9 +51,8 @@ public class RegisterAge extends AppCompatActivity {
     public void openHobbiesEntryPage() {
         int age = getAge(ageSelectionPicker.getYear(), ageSelectionPicker.getMonth(), ageSelectionPicker.getDayOfMonth());
 
-        // if user is above 13 years old then only he/she will be allowed to register to the system.
         if (age > ageLimit) {
-            // code for converting date to string
+
             Calendar cal = Calendar.getInstance();
             cal.set(Calendar.YEAR, ageSelectionPicker.getYear());
             cal.set(Calendar.MONTH, ageSelectionPicker.getMonth());
@@ -69,7 +60,6 @@ public class RegisterAge extends AppCompatActivity {
             Date dateOfBirth = cal.getTime();
             String strDateOfBirth = dateFormatter.format(dateOfBirth);
 
-            // code to set the dateOfBirthAttribute.
             user.setDateOfBirth(strDateOfBirth);
 
             Intent intent = new Intent(this, RegisterHobby.class);
@@ -82,7 +72,6 @@ public class RegisterAge extends AppCompatActivity {
 
     }
 
-    // method to get the current age of the user.
     private int getAge(int year, int month, int day) {
         Calendar dateOfBirth = Calendar.getInstance();
         Calendar today = Calendar.getInstance();

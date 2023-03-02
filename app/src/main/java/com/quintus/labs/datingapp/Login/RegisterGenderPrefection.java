@@ -10,14 +10,6 @@ import android.widget.Button;
 import com.quintus.labs.datingapp.R;
 import com.quintus.labs.datingapp.Utils.User;
 
-
-/**
- * DatingApp
- * https://github.com/quintuslabs/DatingApp
- * Created on 25-sept-2018.
- * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
- */
-
 public class RegisterGenderPrefection extends AppCompatActivity {
 
     String password;
@@ -41,7 +33,6 @@ public class RegisterGenderPrefection extends AppCompatActivity {
         maleSelectionButton = findViewById(R.id.maleSelectionButton);
         femaleSelectionButton = findViewById(R.id.femaleSelectionButton);
         preferenceContinueButton = findViewById(R.id.preferenceContinueButton);
-        //By default male has to be selected so below code is added
 
         femaleSelectionButton.setAlpha(.5f);
         femaleSelectionButton.setBackgroundColor(Color.GRAY);

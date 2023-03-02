@@ -13,18 +13,9 @@ import com.quintus.labs.datingapp.Main.MainActivity;
 import com.quintus.labs.datingapp.R;
 import com.quintus.labs.datingapp.Utils.User;
 
-
-/**
- * DatingApp
- * https://github.com/quintuslabs/DatingApp
- * Created on 25-sept-2018.
- * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
- */
-
 public class RegisterHobby extends AppCompatActivity {
     private static final String TAG = "RegisterHobby";
 
-    //User Info
     User userInfo;
     String password;
 
@@ -62,7 +53,6 @@ public class RegisterHobby extends AppCompatActivity {
         fishingSelectionButton = findViewById(R.id.fishingSelectionButton);
         hobbiesContinueButton = findViewById(R.id.hobbiesContinueButton);
 
-        // Initially all the buttons needs to be grayed out so this code is added, on selection we will enable it later
         sportsSelectionButton.setAlpha(.5f);
         sportsSelectionButton.setBackgroundColor(Color.GRAY);
 
@@ -121,7 +111,7 @@ public class RegisterHobby extends AppCompatActivity {
     }
 
     public void travelButtonClicked() {
-        // this is to toggle between selection and non selection of button
+
         if (travelSelectionButton.getAlpha() == 1.0f) {
             travelSelectionButton.setAlpha(.5f);
             travelSelectionButton.setBackgroundColor(Color.GRAY);
@@ -136,7 +126,7 @@ public class RegisterHobby extends AppCompatActivity {
     }
 
     public void musicButtonClicked() {
-        // this is to toggle between selection and non selection of button
+
         if (musicSelectionButton.getAlpha() == 1.0f) {
             musicSelectionButton.setAlpha(.5f);
             musicSelectionButton.setBackgroundColor(Color.GRAY);
@@ -151,7 +141,7 @@ public class RegisterHobby extends AppCompatActivity {
     }
 
     public void fishingButtonClicked() {
-        // this is to toggle between selection and non selection of button
+
         if (fishingSelectionButton.getAlpha() == 1.0f) {
             fishingSelectionButton.setAlpha(.5f);
             fishingSelectionButton.setBackgroundColor(Color.GRAY);
@@ -177,7 +167,7 @@ public class RegisterHobby extends AppCompatActivity {
     }
 
 
-    //----------------------------------------Firebase----------------------------------------
+    //Firebase
 
 
 }

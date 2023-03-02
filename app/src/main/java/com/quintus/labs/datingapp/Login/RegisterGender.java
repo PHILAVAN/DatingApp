@@ -10,14 +10,6 @@ import android.widget.Button;
 import com.quintus.labs.datingapp.R;
 import com.quintus.labs.datingapp.Utils.User;
 
-
-/**
- * Grocery App
- * https://github.com/quintuslabs/GroceryStore
- * Created on 18-Feb-2019.
- * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
- */
-
 public class RegisterGender extends AppCompatActivity {
 
     String password;
@@ -39,8 +31,6 @@ public class RegisterGender extends AppCompatActivity {
         maleSelectionButton = findViewById(R.id.maleSelectionButton);
         femaleSelectionButton = findViewById(R.id.femaleSelectionButton);
         genderContinueButton = findViewById(R.id.genderContinueButton);
-
-        //By default male has to be selected so below code is added
 
         femaleSelectionButton.setAlpha(.5f);
         femaleSelectionButton.setBackgroundColor(Color.GRAY);

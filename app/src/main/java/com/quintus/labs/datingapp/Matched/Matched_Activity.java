@@ -20,13 +20,6 @@ import com.quintus.labs.datingapp.Utils.User;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * DatingApp
- * https://github.com/quintuslabs/DatingApp
- * Created on 25-sept-2018.
- * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
- */
-
 public class Matched_Activity extends AppCompatActivity {
 
     private static final String TAG = "Matched_Activity";
@@ -56,7 +49,7 @@ public class Matched_Activity extends AppCompatActivity {
         mRecyclerView = findViewById(R.id.matche_recycler_view);
 
         adapter = new ActiveUserAdapter(usersList, getApplicationContext());
-        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, LinearLayout.HORIZONTAL, false);
+        RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false);
         recyclerView.setLayoutManager(mLayoutManager);
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(adapter);
@@ -74,97 +67,39 @@ public class Matched_Activity extends AppCompatActivity {
     }
 
     private void prepareActiveData() {
-        Users users = new Users("1", "Swati Tripathy", 21, "https://im.idiva.com/author/2018/Jul/shivani_chhabra-_author_s_profile.jpg", "Simple and beautiful Girl", "Acting", 200);
+        Users users = new Users("1", "Angelina Jolie", 21, "https://worldwideinterweb.com/wp-content/uploads/2015/01/2016-most-beautiful-woman.jpg", "Simple and beautiful Girl", "Acting", 200);
         usersList.add(users);
-        users = new Users("2", "Ananaya Pandy", 20, "https://i0.wp.com/profilepicturesdp.com/wp-content/uploads/2018/06/beautiful-indian-girl-image-for-profile-picture-8.jpg", "cool Minded Girl", "Dancing", 800);
+        users = new Users("2", "Bella Hadid", 20, "https://worldwideinterweb.com/wp-content/uploads/2015/01/the-20-most-beautiful-women-in-the-world-according-to-google-5.jpg.webp", "cool Minded Girl", "Dancing", 800);
         usersList.add(users);
-        users = new Users("3", "Anjali Kasyap", 22, "https://pbs.twimg.com/profile_images/967542394898952192/_M_eHegh_400x400.jpg", "Simple and beautiful Girl", "Singing", 400);
+        users = new Users("3", "Blake Lively", 22, "https://worldwideinterweb.com/wp-content/uploads/2015/01/the-20-most-beautiful-women-in-the-world-according-to-google-7.jpg.webp", "Simple and beautiful Girl", "Singing", 400);
         usersList.add(users);
-        users = new Users("7", "Sudeshna Roy", 19, "https://talenthouse-res.cloudinary.com/image/upload/c_fill,f_auto,h_640,w_640/v1411380245/user-415406/submissions/hhb27pgtlp9akxjqlr5w.jpg", "Papa's Pari", "Art", 5000);
+        users = new Users("7", "Aishwarya Rai", 19, "https://worldwideinterweb.com/wp-content/uploads/2015/01/25-most-beautiful-women-in-the-world-according-to-google-9.jpg", "Cool and beautiful", "Drawing", 1200);
         usersList.add(users);
 
         adapter.notifyDataSetChanged();
     }
 
     private void prepareMatchData() {
-        Users users = new Users("1", "Swati Tripathy", 21, "https://im.idiva.com/author/2018/Jul/shivani_chhabra-_author_s_profile.jpg", "Simple and beautiful Girl", "Acting", 200);
+        Users users = new Users("1", "Angelina Jolie", 21, "https://worldwideinterweb.com/wp-content/uploads/2015/01/2016-most-beautiful-woman.jpg", "Simple and beautiful Girl", "Acting", 200);
         matchList.add(users);
-        users = new Users("2", "Ananaya Pandy", 20, "https://i0.wp.com/profilepicturesdp.com/wp-content/uploads/2018/06/beautiful-indian-girl-image-for-profile-picture-8.jpg", "cool Minded Girl", "Dancing", 800);
+        users = new Users("2", "Bella Hadid", 20, "https://worldwideinterweb.com/wp-content/uploads/2015/01/the-20-most-beautiful-women-in-the-world-according-to-google-5.jpg.webp", "cool Minded Girl", "Dancing", 800);
         matchList.add(users);
-        users = new Users("3", "Anjali Kasyap", 22, "https://pbs.twimg.com/profile_images/967542394898952192/_M_eHegh_400x400.jpg", "Simple and beautiful Girl", "Singing", 400);
+        users = new Users("3", "Blake Lively", 22, "https://worldwideinterweb.com/wp-content/uploads/2015/01/the-20-most-beautiful-women-in-the-world-according-to-google-7.jpg.webp", "Simple and beautiful Girl", "Singing", 400);
         matchList.add(users);
-        users = new Users("4", "Preety Deshmukh", 19, "http://profilepicturesdp.com/wp-content/uploads/2018/07/fb-real-girls-dp-3.jpg", "dashing girl", "swiming", 1308);
+        users = new Users("4", "Beyonce Knowles", 19, "https://worldwideinterweb.com/wp-content/uploads/2015/01/25-most-beautiful-women-in-the-world-according-to-google-11.jpg", "dashing girl", "Swimming", 1308);
         matchList.add(users);
-        users = new Users("5", "Srutimayee Sen", 20, "https://dp.profilepics.in/profile_pictures/selfie-girls-profile-pics-dp/selfie-pics-dp-for-whatsapp-facebook-profile-25.jpg", "chulbuli nautankibaj ", "Drawing", 1200);
+        users = new Users("5", "Aishwarya Rai", 20, "https://worldwideinterweb.com/wp-content/uploads/2015/01/25-most-beautiful-women-in-the-world-according-to-google-9.jpg", "Cool and beautiful", "Drawing", 1200);
         matchList.add(users);
-        users = new Users("6", "Dikshya Agarawal", 21, "https://pbs.twimg.com/profile_images/485824669732200448/Wy__CJwU.jpeg", "Simple and beautiful Girl", "Sleeping", 700);
+        users = new Users("6", "Jessica Alba", 21, "https://worldwideinterweb.com/wp-content/uploads/2015/01/25-most-beautiful-women-in-the-world-according-to-google-6.jpg", "Simple and beautiful Girl", "Model", 700);
         matchList.add(users);
-        users = new Users("7", "Sudeshna Roy", 19, "https://talenthouse-res.cloudinary.com/image/upload/c_fill,f_auto,h_640,w_640/v1411380245/user-415406/submissions/hhb27pgtlp9akxjqlr5w.jpg", "Papa's Pari", "Art", 5000);
+        users = new Users("7", "Eva Mendes", 19, "https://worldwideinterweb.com/wp-content/uploads/2015/01/25-most-beautiful-women-in-the-world-according-to-google-20.jpg.webp", "Cool and beautiful", "Art", 5000);
         matchList.add(users);
 
         mAdapter.notifyDataSetChanged();
     }
 
     private void searchFunc() {
-       /* search = findViewById(R.id.searchBar);
-        search.addTextChangedListener(new TextWatcher() {
-            @Override
-            public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-            }
-
-            @Override
-            public void onTextChanged(CharSequence s, int start, int before, int count) {
-                searchText();
-            }
-
-            @Override
-            public void afterTextChanged(Editable s) {
-                searchText();
-            }
-        });*/
     }
-
-    /* private void searchText() {
-         String text = search.getText().toString().toLowerCase(Locale.getDefault());
-         if (text.length() != 0) {
-             if (matchList.size() != 0) {
-                 matchList.clear();
-                 for (User user : copyList) {
-                     if (user.getUsername().toLowerCase(Locale.getDefault()).contains(text)) {
-                         matchList.add(user);
-                     }
-                 }
-             }
-         } else {
-             matchList.clear();
-             matchList.addAll(copyList);
-         }
-
-         mAdapter.notifyDataSetChanged();
-     }
-
-     private boolean checkDup(User user) {
-         if (matchList.size() != 0) {
-             for (User u : matchList) {
-                 if (u.getUsername() == user.getUsername()) {
-                     return true;
-                 }
-             }
-         }
-
-         return false;
-     }
-
-     private void checkClickedItem(int position) {
-
-         User user = matchList.get(position);
-         //calculate distance
-         Intent intent = new Intent(this, ProfileCheckinMatched.class);
-         intent.putExtra("classUser", user);
-
-         startActivity(intent);
-     }
- */
     private void setupTopNavigationView() {
         Log.d(TAG, "setupTopNavigationView: setting up TopNavigationView");
         BottomNavigationViewEx tvEx = findViewById(R.id.topNavViewBar);

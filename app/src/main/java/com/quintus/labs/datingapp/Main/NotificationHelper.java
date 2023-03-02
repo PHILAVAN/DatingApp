@@ -16,15 +16,6 @@ import android.util.Log;
 import com.quintus.labs.datingapp.Matched.Matched_Activity;
 import com.quintus.labs.datingapp.R;
 
-
-
-/**
- * DatingApp
- * https://github.com/quintuslabs/DatingApp
- * Created on 25-sept-2018.
- * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
- */
-
 public class NotificationHelper extends ContextWrapper {
     public static final String channel1ID = "channel1ID";
     public static final String channel1Name = "channel 1";
@@ -64,7 +55,7 @@ public class NotificationHelper extends ContextWrapper {
     public NotificationCompat.Builder getChannel1Notification(String title, String message) {
         Intent intent = new Intent(this, Matched_Activity.class);
         PendingIntent pi = PendingIntent.getActivity(this, 0, intent, 0);
-        Log.d("notification", "we are in getChaneel1Notification function \n ");
+        Log.d("notification", "we are in getChanel1Notification function \n ");
 
         return new NotificationCompat.Builder(getApplicationContext(), channel1ID)
                 .setContentTitle(title)
@@ -75,9 +66,8 @@ public class NotificationHelper extends ContextWrapper {
                 .setContentIntent(pi);
     }
 
-    //compare SDK version to set the app icon as silhouette or regular one
     private int getNotificationIcon() {
         boolean useWhiteIcon = (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.LOLLIPOP);
-        return useWhiteIcon ? R.drawable.notification_app_icon : R.drawable.ic_location;
+        return useWhiteIcon ? R.drawable.ic_location: R.drawable.ic_location;
     }
 }

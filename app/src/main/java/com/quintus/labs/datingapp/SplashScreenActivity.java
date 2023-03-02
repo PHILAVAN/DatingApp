@@ -43,8 +43,8 @@ public class SplashScreenActivity extends AppCompatActivity {
         setContentView(R.layout.activity_splash_screen);
 
         ScaleAnimation fade_in =  new ScaleAnimation(0f, 1f, 0f, 1f, Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
-        fade_in.setDuration(3000);     // animation duration in milliseconds
-        fade_in.setFillAfter(true);    // If fillAfter is true, the transformation that this animation performed will persist when it is finished.
+        fade_in.setDuration(3000);
+        fade_in.setFillAfter(true);
         findViewById(R.id.imageView).startAnimation(fade_in);
 
 

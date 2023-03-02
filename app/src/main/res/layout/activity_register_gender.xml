@@ -1,10 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--
-   * DatingApp
-    * https://github.com/quintuslabs/DatingApp
-    * Created on 25-sept-2018.
-    * Created by : Santosh Kumar Dash:- http://santoshdash.epizy.com
-    -->
 
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -48,7 +42,7 @@
             android:layout_alignParentBottom="true"
             android:layout_marginLeft="40dp"
             android:text="Love Dating"
-            android:textColor="#ff0b00"
+            android:textColor="#F85C91"
             android:textSize="30dp" />
 
     </RelativeLayout>
@@ -66,7 +60,7 @@
             android:layout_marginLeft="24dp"
             android:layout_marginRight="24dp"
             android:layout_marginBottom="20dp"
-            android:text="Gender Please !!!!"
+            android:text="Your Gender"
             android:textColor="#747474"
             android:textSize="24sp"
             android:textStyle="bold" />
